@@ -25,7 +25,7 @@ fi
 # Install Apéro theme
 if [ ! -d "themes/hugo-apero" ]; then
     echo "📦 Installing Hugo Apéro theme..."
-    git submodule add https://github.com/hugo-apero/hugo-apero.git themes/hugo-apero
+    # Theme should be manually installed or provided
     git submodule update --init --recursive
     echo "✓ Theme installed successfully"
 else

@@ -1,4 +1,4 @@
-baseURL = "https://basimalsaedi-analytics.github.io/consulting_services_website/"
+baseURL = "/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Data Insights Consulting"
@@ -89,11 +89,6 @@ enableEmoji = true
     icon = "linkedin"
     icon_pack = "fab"
     url = "https://www.linkedin.com/company/data-insights-consulting"
-    
-  [[params.social]]
-    icon = "github"
-    icon_pack = "fab"
-    url = "https://github.com/data-insights-consulting"
     
   [[params.social]]
     icon = "twitter"

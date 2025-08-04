@@ -16,7 +16,7 @@ This website serves as the digital presence for Data Insights Consulting, offeri
 - **Static Site Generator**: [Hugo](https://gohugo.io/) (v0.92.0+)
 - **Theme**: [Hugo Apéro](https://github.com/hugo-apero/hugo-apero) (as git submodule)
 - **CSS Framework**: Tachyons CSS (built into theme)
-- **Deployment**: GitHub Pages with GitHub Actions
+- **Deployment**: Static hosting
 - **Form Handling**: Formspree
 - **Languages**: English (primary), Arabic (RTL support)
 
@@ -24,9 +24,6 @@ This website serves as the digital presence for Data Insights Consulting, offeri
 
 ```
 ConsultingServicesWebsite/
-├── .github/
-│   └── workflows/
-│       └── hugo.yml          # GitHub Actions deployment workflow
 ├── archetypes/               # Content templates
 │   └── default.md
 ├── config.toml              # Main configuration file
@@ -74,9 +71,8 @@ ConsultingServicesWebsite/
 
 ### Local Development
 
-1. **Clone the repository**
+1. **Navigate to project directory**
    ```bash
-   git clone https://github.com/BasimAlsaedi-analytics/consulting_services_website.git
    cd ConsultingServicesWebsite
    ```
 
@@ -192,28 +188,18 @@ The contact form uses Formspree for processing. Configuration:
 
 ## 🚀 Deployment
 
-The site is configured for GitHub Pages deployment using GitHub Actions.
-
-### Automatic Deployment:
-1. Push changes to the `main` branch
-2. GitHub Actions builds the site
-3. Deploys to GitHub Pages automatically
+The site can be deployed to any static hosting service.
 
 ### Manual Deployment:
 1. Build the site: `hugo --minify`
 2. Deploy the `public/` directory to your hosting service
-
-### GitHub Pages URL:
-```
-https://basimalsaedi-analytics.github.io/consulting_services_website/
-```
 
 ## 🔧 Configuration
 
 Key configuration options in `config.toml`:
 
 ```toml
-baseURL = "https://basimalsaedi-analytics.github.io/consulting_services_website/"
+baseURL = "/"
 title = "Data Insights Consulting"
 theme = "hugo-apero"
 languageCode = "en"
@@ -239,15 +225,14 @@ defaultContentLanguage = "en"
 - ✅ Blog with categories and tags
 - ✅ SEO optimized
 - ✅ Fast loading (static site)
-- ✅ GitHub Pages ready
+- ✅ Ready for static hosting
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+2. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the branch
+4. Submit your changes
 
 ## 📄 License
 
@@ -277,7 +262,6 @@ git submodule update --init --recursive
 ## 📞 Support
 
 For issues or questions:
-- Open an issue on GitHub
 - Contact: basimalsaedi@outlook.com
 
 ---

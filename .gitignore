@@ -54,3 +54,8 @@ content/**/*draft*
 
 # Local netlify folder
 .netlify
+
+# Claude-specific files
+.claude/
+.claude.md
+CLAUDE.md

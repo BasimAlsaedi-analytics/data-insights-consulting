@@ -11,10 +11,6 @@
     "serve": "hugo server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yourusername/data-insights-consulting.git"
-  },
   "keywords": [
     "hugo",
     "website",
@@ -24,10 +20,6 @@
   ],
   "author": "Data Insights Consulting",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yourusername/data-insights-consulting/issues"
-  },
-  "homepage": "https://github.com/yourusername/data-insights-consulting#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",
