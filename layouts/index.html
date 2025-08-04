@@ -1,0 +1,272 @@
+{{ define "main" }}
+<main class="page-main" role="main" style="padding: 0 !important; grid-column: 1 / -1 !important;">
+<style>
+/* Override all grid and tachyons styles */
+.grid-container { 
+  display: block !important; 
+  grid-template-columns: none !important;
+  max-width: 100% !important;
+}
+.page-main {
+  display: block !important;
+  grid-column: 1 / -1 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+section {
+  display: block !important;
+  width: 100% !important;
+  grid-column: 1 / -1 !important;
+}
+.services-blog-flex {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 2rem !important;
+  align-items: flex-start !important;
+}
+.services-blog-flex > div {
+  flex: 1 1 50% !important;
+  width: 50% !important;
+  max-width: 50% !important;
+}
+@media (max-width: 768px) {
+  .services-blog-flex { 
+    flex-direction: column !important; 
+  }
+  .services-blog-flex > div { 
+    width: 100% !important; 
+    max-width: 100% !important;
+  }
+  .stats-flex { 
+    gap: 2rem !important; 
+  }
+}
+</style>
+<!-- Hero Section -->
+<section class="hero-section" style="padding: 3rem 0;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div style="text-align: center;">
+      {{ if eq .Lang "ar" }}
+      <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C3E50;">حوّل بياناتك إلى قيمة تجارية</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 0; color: #333;">استشارات تحليلية متخصصة تحقق نتائج قابلة للقياس</p>
+      {{ else }}
+      <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 1.5rem; color: #2C3E50;">Transform Your Data Into Business Value</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 0; color: #333;">Expert analytics consulting that drives measurable results</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+
+<!-- Services + Blog Split Section -->
+<section class="services-blog-section" style="width: 100%; display: block; padding: 3rem 0; background-color: #f8f9fa;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+    <div class="services-blog-flex" style="display: flex; gap: 2rem; align-items: flex-start;">
+      <!-- Services Column -->
+      <div style="flex: 1; width: 50%;">
+        <h3 style="margin-bottom: 1.5rem; font-weight: bold;">{{ if eq .Lang "ar" }}خدماتنا{{ else }}SERVICES{{ end }}</h3>
+        <div class="services-list">
+          {{ if eq .Lang "ar" }}
+          <!-- Arabic Services -->
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-chart-line" style="font-size: 2rem; color: #E67E22; margin-left: 1rem;"></i>
+            <span style="font-size: 1.25rem;">لوحات المعلومات</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-chart-pie" style="font-size: 2rem; color: #E67E22; margin-left: 1rem;"></i>
+            <span style="font-size: 1.25rem;">التحليل</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-robot" style="font-size: 2rem; color: #E67E22; margin-left: 1rem;"></i>
+            <span style="font-size: 1.25rem;">الذكاء الاصطناعي/تعلم الآلة</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-graduation-cap" style="font-size: 2rem; color: #E67E22; margin-left: 1rem;"></i>
+            <span style="font-size: 1.25rem;">التدريب</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-microscope" style="font-size: 2rem; color: #E67E22; margin-left: 1rem;"></i>
+            <span style="font-size: 1.25rem;">المراجعة</span>
+          </div>
+          <div style="margin-top: 2rem;">
+            <a href="/consulting_services_website/ar/services/" style="display: inline-block; padding: 0.75rem 1.5rem; border: 2px solid #E67E22; color: #E67E22; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s;">استكشف المزيد ←</a>
+          </div>
+          {{ else }}
+          <!-- English Services -->
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-chart-line" style="font-size: 2rem; color: #E67E22; margin-right: 1rem;"></i>
+            <span style="font-size: 1.25rem;">Dashboards</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-chart-pie" style="font-size: 2rem; color: #E67E22; margin-right: 1rem;"></i>
+            <span style="font-size: 1.25rem;">Analysis</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-robot" style="font-size: 2rem; color: #E67E22; margin-right: 1rem;"></i>
+            <span style="font-size: 1.25rem;">AI/ML</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-graduation-cap" style="font-size: 2rem; color: #E67E22; margin-right: 1rem;"></i>
+            <span style="font-size: 1.25rem;">Training</span>
+          </div>
+          <div class="service-item" style="display: flex; align-items: center; margin-bottom: 1rem;">
+            <i class="fas fa-microscope" style="font-size: 2rem; color: #E67E22; margin-right: 1rem;"></i>
+            <span style="font-size: 1.25rem;">Review</span>
+          </div>
+          <div style="margin-top: 2rem;">
+            <a href="/consulting_services_website/services/" style="display: inline-block; padding: 0.75rem 1.5rem; border: 2px solid #E67E22; color: #E67E22; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s;">Explore →</a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Blog Column -->
+      <div style="flex: 1; width: 50%;">
+        <h3 style="margin-bottom: 1.5rem; font-weight: bold;">{{ if eq .Lang "ar" }}أحدث الرؤى{{ else }}LATEST INSIGHTS{{ end }}</h3>
+        <div class="blog-carousel">
+          <!-- Blog posts will be language-specific -->
+          {{ $blogSection := where .Site.RegularPages "Section" "blog" }}
+          {{ $langPosts := where $blogSection "Lang" .Lang }}
+          {{ $recentPosts := first 3 $langPosts }}
+          
+          {{ if $recentPosts }}
+            <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                {{ range $index, $post := $recentPosts }}
+                <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                  <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                      <h4 class="card-title h5">{{ $post.Title }}</h4>
+                      <p class="card-text text-muted">{{ $post.Summary | truncate 150 }}</p>
+                      {{ if eq $.Lang "ar" }}
+                      <a href="{{ $post.Permalink }}" class="btn btn-link p-0">اقرأ المزيد ←</a>
+                      {{ else }}
+                      <a href="{{ $post.Permalink }}" class="btn btn-link p-0">Read More →</a>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+                {{ end }}
+              </div>
+              <div class="carousel-indicators mt-3">
+                {{ range $index, $post := $recentPosts }}
+                <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }}></button>
+                {{ end }}
+              </div>
+            </div>
+          {{ else }}
+            <!-- Placeholder content if no blog posts -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-4">
+                {{ if eq .Lang "ar" }}
+                <h4 class="card-title h5">مقالات قادمة قريباً</h4>
+                <p class="card-text text-muted">نعمل على إنشاء محتوى قيم لك. تحقق مرة أخرى قريباً!</p>
+                {{ else }}
+                <h4 class="card-title h5">Blog Posts Coming Soon</h4>
+                <p class="card-text text-muted">We're working on creating valuable content for you. Check back soon!</p>
+                {{ end }}
+              </div>
+            </div>
+          {{ end }}
+          
+          <div class="mt-3 text-center">
+            {{ if eq .Lang "ar" }}
+            <a href="/consulting_services_website/ar/blog/" class="btn btn-link">عرض جميع المقالات ←</a>
+            {{ else }}
+            <a href="/consulting_services_website/blog/" class="btn btn-link">View All Posts →</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Strip -->
+<section class="booking-strip py-4 bg-primary text-white" style="width: 100%; display: block;">
+  <div class="container" style="max-width: 1200px;">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-center gap-3" style="display: flex !important; flex-wrap: wrap;">
+          {{ if eq .Lang "ar" }}
+          <span class="h5 mb-0"><i class="fas fa-calendar-alt me-2"></i>احجز استشارتك المجانية:</span>
+          <select class="form-select form-select-sm" style="width: auto;">
+            <option>اليوم 2 مساءً</option>
+            <option>غداً 10 صباحاً</option>
+            <option>الأربعاء 3 مساءً</option>
+          </select>
+          <a href="/consulting_services_website/ar/contact/" class="btn btn-light btn-sm">احجز الآن</a>
+          {{ else }}
+          <span class="h5 mb-0"><i class="fas fa-calendar-alt me-2"></i>Book Your Free Consultation:</span>
+          <select class="form-select form-select-sm" style="width: auto;">
+            <option>Today 2pm</option>
+            <option>Tomorrow 10am</option>
+            <option>Wednesday 3pm</option>
+          </select>
+          <a href="/consulting_services_website/contact/" class="btn btn-light btn-sm">Book Now</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats + CTA Section -->
+<section class="stats-cta-section" style="width: 100%; display: block; padding: 3rem 0;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 1rem; text-align: center;">
+    <div class="stats-flex" style="display: flex; justify-content: center; gap: 4rem; margin-bottom: 3rem; flex-wrap: wrap;">
+      <div style="min-width: 140px;">
+        <h3 style="font-size: 2.5rem; font-weight: bold; color: #E67E22; margin: 0;">{{ if eq .Lang "ar" }}١٥+{{ else }}15+{{ end }}</h3>
+        <p style="color: #6c757d; margin: 0; font-size: 0.9rem;">{{ if eq .Lang "ar" }}محاضرة{{ else }}Talks{{ end }}</p>
+        <p style="color: #6c757d; margin: 0; font-size: 0.8rem;">{{ if eq .Lang "ar" }}محاضرات وورش عمل{{ else }}Speaking Engagements{{ end }}</p>
+      </div>
+      <div style="min-width: 140px;">
+        <h3 style="font-size: 2.5rem; font-weight: bold; color: #E67E22; margin: 0;">{{ if eq .Lang "ar" }}٥٠٠+{{ else }}500+{{ end }}</h3>
+        <p style="color: #6c757d; margin: 0; font-size: 0.9rem;">{{ if eq .Lang "ar" }}حضور{{ else }}Attendees{{ end }}</p>
+        <p style="color: #6c757d; margin: 0; font-size: 0.8rem;">{{ if eq .Lang "ar" }}أشخاص تم الوصول إليهم{{ else }}People Reached{{ end }}</p>
+      </div>
+      <div style="min-width: 140px;">
+        <h3 style="font-size: 2.5rem; font-weight: bold; color: #E67E22; margin: 0;">{{ if eq .Lang "ar" }}٣{{ else }}3{{ end }}</h3>
+        <p style="color: #6c757d; margin: 0; font-size: 0.9rem;">{{ if eq .Lang "ar" }}لوحات معلومات{{ else }}Dashboards{{ end }}</p>
+        <p style="color: #6c757d; margin: 0; font-size: 0.8rem;">{{ if eq .Lang "ar" }}مشاريع مباشرة{{ else }}Live Projects{{ end }}</p>
+      </div>
+    </div>
+    
+    <div>
+      {{ if eq .Lang "ar" }}
+      <a href="/consulting_services_website/ar/contact/" style="display: inline-block; padding: 1rem 2.5rem; background-color: #E67E22; color: white; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 1.125rem; transition: all 0.3s;">ابدأ رحلتك اليوم</a>
+      {{ else }}
+      <a href="/consulting_services_website/contact/" style="display: inline-block; padding: 1rem 2.5rem; background-color: #E67E22; color: white; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 1.125rem; transition: all 0.3s;">Start Your Journey Today</a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Language Switcher -->
+<div class="language-switcher">
+  {{ range .Site.Languages }}
+    <a href="{{ $.Site.BaseURL }}{{ if ne .Lang "en" }}{{ .Lang }}/{{ end }}" class="{{ if eq $.Site.Language.Lang .Lang }}active{{ end }}">{{ .LanguageName }}</a>
+  {{ end }}
+</div>
+<script>
+// Force layout after page load
+window.addEventListener('DOMContentLoaded', function() {
+  // Remove any grid classes
+  document.querySelectorAll('.grid-container').forEach(function(el) {
+    el.style.display = 'block';
+    el.style.gridTemplateColumns = 'none';
+  });
+  
+  // Ensure flexbox works
+  document.querySelectorAll('.services-blog-flex').forEach(function(el) {
+    el.style.display = 'flex';
+    el.style.flexDirection = 'row';
+    el.style.gap = '2rem';
+  });
+  
+  console.log('Layout fixes applied');
+});
+</script>
+</main>
+{{ end }}

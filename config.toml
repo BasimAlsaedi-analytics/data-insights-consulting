@@ -1,0 +1,227 @@
+baseURL = "https://basimalsaedi-analytics.github.io/consulting_services_website/"
+theme = "hugo-apero"
+languageCode = "en"
+title = "Data Insights Consulting"
+author = "Data Insights Team"
+copyright = "© 2024 Data Insights Consulting"
+googleAnalytics = ""
+disqusShortname = ""
+metaDataFormat = "yaml"
+footnoteReturnLinkContents = "&#8617;" 
+paginate = 5
+preserveTaxonomyNames = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+enableEmoji = true
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.highlight]
+    style = "github"
+  [markup.tableOfContents]
+    ordered = false
+    startLevel = 1
+    endLevel = 2
+
+[params]
+  orgName = "Data Insights Consulting"
+  orgLocal = ""
+  description = "Transforming Data into Strategic Insights - Professional data consulting services including statistical analysis, interactive dashboards, and business intelligence."
+  favicon = "/img/favicon.ico"
+  logo = "/img/logo.png"
+  mainSections = ["blog", "services"]
+  navallcaps = true
+  # sharing_image = "/img/papillons.jpg"
+  # font options: sans-serif or serif
+  # for more http://tachyons.io/docs/typography/font-family/
+  textFontFamily = "sans-serif"
+  headingFontFamily = "sans-serif"
+  # basic color options: use only color names as shown in the
+  # "Color Palette" section of http://tachyons.io/docs/themes/skins/
+  siteBgColor = "white"
+  sidebarBgColor = "light-gray"
+  headingColor = "black"
+  textColor = "dark-gray"
+  sidebarTextColor = "mid-gray"
+  bodyLinkColor = "blue"
+  navLinkColor = "dark-gray"
+  sidebarLinkColor = "dark-gray"
+  footerBgColor = "black"
+  footerTextColor = "white"
+  buttonTextColor = "white"
+  buttonBgColor = "blue"
+  buttonHoverTextColor = "white"
+  buttonHoverBgColor = "blue"
+  borderColor = "moon-gray"
+  # show/hide social icons in site header & footer
+  # configure social icons and links below in [[params.social]]
+  socialInHeader = false
+  socialInFooter = true
+  # Default image for social sharing and search engines. 
+  # Place image file in `static` folder and specify image name here.
+  sharing_image = "/img/papillons.jpg"
+  # Twitter username (without @). Used when a visitor shares your site on Twitter.
+  twitter = "datainsightsconsult"
+  
+  # use a built-in color theme
+  # one of: forest / grayscale / peach / plum /
+  #         poppy / sky / violet / water 
+  theme = "water"
+  
+  # or, leave theme empty & make your own palette
+  # see docs at https://hugo-apero.netlify.app/blog/color-themes/
+  # the custom scss file must be in the assets/ folder
+  # add the filename name here, without extension
+  # to use hex colors instead of named tachyons colors, include "hex" in filename
+  custom_theme = ""
+  
+  # Social icons
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fab"
+    url = "https://www.linkedin.com/company/data-insights-consulting"
+    
+  [[params.social]]
+    icon = "github"
+    icon_pack = "fab"
+    url = "https://github.com/data-insights-consulting"
+    
+  [[params.social]]
+    icon = "twitter"
+    icon_pack = "fab"
+    url = "https://twitter.com/datainsightsconsult"
+    
+  [[params.social]]
+    icon = "envelope"
+    icon_pack = "fas"
+    url = "mailto:info@datainsightsconsulting.com"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+# Main menu configuration
+[[menu.header]]
+  name = "Home"
+  title = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.header]]
+  name = "About"
+  title = "About Us"
+  url = "/about/"
+  weight = 2
+  
+[[menu.header]]
+  name = "Services"
+  title = "Our Services"
+  url = "/services/"
+  weight = 3
+
+[[menu.header]]
+  name = "Blog"
+  title = "Insights"
+  url = "/blog/"
+  weight = 4
+
+[[menu.header]]
+  name = "Contact"
+  title = "Contact Us"
+  url = "/contact/"
+  weight = 5
+
+# Configure footer
+[params.footer]
+  show_footer_byline = false
+  copyright = "© 2024 Data Insights Consulting"
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = false
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = true
+  [privacy.twitter]
+    disable = false
+    enableDNT = true
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+# Configure site search
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss+xml"
+  baseName = "feed"
+
+# Multilingual configuration
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    title = "Data Insights Consulting"
+    
+  [languages.ar]
+    languageName = "العربية"
+    weight = 2
+    title = "استشارات رؤى البيانات"
+    [languages.ar.params]
+      rtl = true
+      
+# Arabic menu configuration
+[[languages.ar.menu.header]]
+  name = "الرئيسية"
+  title = "الرئيسية"
+  url = "/ar/"
+  weight = 1
+
+[[languages.ar.menu.header]]
+  name = "من نحن"
+  title = "من نحن"
+  url = "/ar/about/"
+  weight = 2
+  
+[[languages.ar.menu.header]]
+  name = "الخدمات"
+  title = "خدماتنا"
+  url = "/ar/services/"
+  weight = 3
+
+[[languages.ar.menu.header]]
+  name = "المدونة"
+  title = "الرؤى"
+  url = "/ar/blog/"
+  weight = 4
+
+[[languages.ar.menu.header]]
+  name = "اتصل بنا"
+  title = "اتصل بنا"
+  url = "/ar/contact/"
+  weight = 5

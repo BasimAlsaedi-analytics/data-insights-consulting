@@ -1,0 +1,91 @@
+clients:
+  - name: "Microsoft"
+    logo: "/images/clients/microsoft.png"
+    category: "Technology"
+    featured: true
+    
+  - name: "Johnson & Johnson"
+    logo: "/images/clients/johnson-johnson.png"
+    category: "Healthcare"
+    featured: true
+    
+  - name: "JPMorgan Chase"
+    logo: "/images/clients/jpmorgan.png"
+    category: "Financial Services"
+    featured: true
+    
+  - name: "Amazon"
+    logo: "/images/clients/amazon.png"
+    category: "E-commerce"
+    featured: true
+    
+  - name: "General Electric"
+    logo: "/images/clients/general-electric.png"
+    category: "Manufacturing"
+    featured: true
+    
+  - name: "Target"
+    logo: "/images/clients/target.png"
+    category: "Retail"
+    featured: false
+    
+  - name: "United Healthcare"
+    logo: "/images/clients/united-healthcare.png"
+    category: "Healthcare"
+    featured: false
+    
+  - name: "Bank of America"
+    logo: "/images/clients/bank-of-america.png"
+    category: "Financial Services"
+    featured: false
+    
+  - name: "Walmart"
+    logo: "/images/clients/walmart.png"
+    category: "Retail"
+    featured: false
+    
+  - name: "Pfizer"
+    logo: "/images/clients/pfizer.png"
+    category: "Healthcare"
+    featured: false
+    
+  - name: "Tesla"
+    logo: "/images/clients/tesla.png"
+    category: "Manufacturing"
+    featured: false
+    
+  - name: "Google"
+    logo: "/images/clients/google.png"
+    category: "Technology"
+    featured: false
+
+industries_served:
+  - name: "Healthcare & Life Sciences"
+    icon: "heartbeat"
+    client_count: 45
+    
+  - name: "Financial Services"
+    icon: "chart-line"
+    client_count: 62
+    
+  - name: "Retail & E-commerce"
+    icon: "shopping-cart"
+    client_count: 38
+    
+  - name: "Manufacturing"
+    icon: "industry"
+    client_count: 29
+    
+  - name: "Technology"
+    icon: "microchip"
+    client_count: 41
+    
+  - name: "Government"
+    icon: "landmark"
+    client_count: 15
+
+stats:
+  total_clients: 230
+  countries: 15
+  years_experience: 10
+  client_retention: 95

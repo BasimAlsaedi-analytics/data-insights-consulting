@@ -1,0 +1,42 @@
+{{ $title := .Get "title" }}
+{{ $url := .Get "url" }}
+{{ $image := .Get "image" }}
+{{ $description := .Get "description" }}
+{{ $platform := .Get "platform" | default "generic" }}
+
+<div class="dashboard-link-card">
+  <div class="dashboard-preview">
+    {{ if $image }}
+      <img src="{{ $image | relURL }}" alt="{{ $title }} preview" loading="lazy">
+    {{ else }}
+      <div class="dashboard-placeholder">
+        <i class="fas fa-chart-line fa-3x"></i>
+      </div>
+    {{ end }}
+  </div>
+  
+  <div class="dashboard-info">
+    <h3>{{ $title }}</h3>
+    <p>{{ $description }}</p>
+    
+    <div class="dashboard-meta">
+      <span class="platform-badge platform-{{ $platform }}">
+        {{ if eq $platform "streamlit" }}
+          <i class="fas fa-stream"></i> Streamlit
+        {{ else if eq $platform "tableau" }}
+          <i class="fas fa-chart-bar"></i> Tableau
+        {{ else if eq $platform "powerbi" }}
+          <i class="fas fa-microsoft"></i> Power BI
+        {{ else if eq $platform "custom" }}
+          <i class="fas fa-code"></i> Custom App
+        {{ else }}
+          <i class="fas fa-dashboard"></i> Dashboard
+        {{ end }}
+      </span>
+    </div>
+    
+    <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="dashboard-link-button">
+      View Dashboard <i class="fas fa-external-link-alt"></i>
+    </a>
+  </div>
+</div>

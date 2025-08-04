@@ -1,0 +1,80 @@
+testimonials:
+  - name: "Sarah Johnson"
+    role: "CEO"
+    company: "TechCorp Industries"
+    image: "/images/testimonials/sarah-johnson.jpg"
+    quote: "Data Insights Consulting transformed our approach to analytics. Their dashboards gave us real-time visibility into our operations, resulting in 30% efficiency gains and millions in cost savings."
+    rating: 5
+    featured: true
+    
+  - name: "Michael Chen"
+    role: "VP Analytics"
+    company: "FinanceHub"
+    image: "/images/testimonials/michael-chen.jpg"
+    quote: "The statistical analysis provided by the team was exceptional. They helped us identify key market trends that drove our strategic planning and resulted in 40% revenue growth."
+    rating: 5
+    featured: true
+    
+  - name: "Dr. Emily Davis"
+    role: "Director"
+    company: "Research Institute"
+    image: "/images/testimonials/emily-davis.jpg"
+    quote: "Their training workshops empowered our team to become truly data-driven. The ROI has been incredible - we've saved countless hours and made better decisions."
+    rating: 5
+    featured: true
+    
+  - name: "Robert Anderson"
+    role: "Chief Medical Officer"
+    company: "Regional Hospital Network"
+    image: "/images/testimonials/robert-anderson.jpg"
+    quote: "The predictive model for patient readmissions has transformed our discharge planning. We've reduced readmissions by 32% and saved $12M annually."
+    rating: 5
+    featured: false
+    
+  - name: "Jennifer Walsh"
+    role: "Chief Supply Chain Officer"
+    company: "Global Manufacturing Inc."
+    image: "/images/testimonials/jennifer-walsh.jpg"
+    quote: "The AI-powered supply chain platform revolutionized our operations. We achieved 28% cost reduction and gained real-time agility to respond to market changes."
+    rating: 5
+    featured: false
+    
+  - name: "Mark Thompson"
+    role: "CMO"
+    company: "E-commerce Leaders"
+    image: "/images/testimonials/mark-thompson.jpg"
+    quote: "The customer segmentation platform transformed our marketing. We've moved from generic campaigns to precise targeting with 42% higher conversion rates."
+    rating: 5
+    featured: false
+    
+  - name: "Patricia Kumar"
+    role: "Head of Operations"
+    company: "Retail Chain Solutions"
+    image: "/images/testimonials/patricia-kumar.jpg"
+    quote: "Working with Data Insights Consulting was a game-changer. Their expertise in predictive analytics helped us optimize inventory and increase profitability by 25%."
+    rating: 5
+    featured: false
+    
+  - name: "David Park"
+    role: "CTO"
+    company: "Innovation Tech"
+    image: "/images/testimonials/david-park.jpg"
+    quote: "The team's technical expertise is unmatched. They delivered a complex ML solution on time and under budget, exceeding all our performance expectations."
+    rating: 5
+    featured: false
+    
+  - name: "Lisa Martinez"
+    role: "CFO"
+    company: "Financial Services Group"
+    image: "/images/testimonials/lisa-martinez.jpg"
+    quote: "The ROI from our analytics investment has been phenomenal. We're making faster, more accurate decisions that directly impact our bottom line."
+    rating: 5
+    featured: false
+    
+  - name: "James Wilson"
+    role: "VP of Sales"
+    company: "B2B Solutions Inc."
+    image: "/images/testimonials/james-wilson.jpg"
+    quote: "The sales analytics dashboard provided insights we never had before. Our team's productivity increased by 40% and we closed deals 30% faster."
+    rating: 5
+    featured: false
