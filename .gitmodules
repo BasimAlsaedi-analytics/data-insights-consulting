@@ -1,3 +1,3 @@
 [submodule "themes/hugo-apero"]
 	path = themes/hugo-apero
-	url = ../hugo-apero.git
+	url = https://github.com/hugo-apero/hugo-apero.git
