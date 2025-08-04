@@ -69,4 +69,4 @@ We use the best tools for the job:
 
 ## Start Your AI Journey
 
-Ready to see what AI can do for your business? [Contact us](/consulting_services_website/contact/) for a free AI assessment.
+Ready to see what AI can do for your business? [Contact us](/contact/) for a free AI assessment.

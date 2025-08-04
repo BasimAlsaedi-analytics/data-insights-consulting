@@ -89,4 +89,4 @@ Our strategic direction is guided by leaders from:
 
 ---
 
-Ready to work with our expert team? [Contact us](/consulting_services_website/contact/) to discuss how we can help achieve your data goals.
+Ready to work with our expert team? [Contact us](/contact/) to discuss how we can help achieve your data goals.

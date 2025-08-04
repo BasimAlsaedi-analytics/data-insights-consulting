@@ -52,4 +52,4 @@ We don't deliver 200-page reports. We deliver insights that fit on one page and 
 
 ## Start Your Analysis Today
 
-Your data has answers. We'll find them. [Contact us](/consulting_services_website/contact/) today.
+Your data has answers. We'll find them. [Contact us](/contact/) today.

@@ -59,4 +59,4 @@ Your research deserves to be published. Let's make sure it is.
 
 ## Start Your Review
 
-[Contact us](/consulting_services_website/contact/) with your draft. First consultation free.
+[Contact us](/contact/) with your draft. First consultation free.

@@ -390,7 +390,7 @@ Remember: Every company that's successfully using predictive analytics started w
 
 ## Ready to Predict Your Success?
 
-Our team has helped 200+ companies implement predictive analytics solutions with average ROIs exceeding 300%. [Contact us](/consulting_services_website/contact/) for a free consultation and ROI assessment.
+Our team has helped 200+ companies implement predictive analytics solutions with average ROIs exceeding 300%. [Contact us](/contact/) for a free consultation and ROI assessment.
 
 ### Additional Resources:
 - [Predictive Analytics ROI Calculator](/tools/roi-calculator)

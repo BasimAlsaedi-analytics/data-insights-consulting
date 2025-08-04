@@ -30,4 +30,4 @@ Five core services. Unlimited possibilities. Real results.
 
 ### Ready to Start?
 
-Your data has potential. We'll help you realize it. [Contact us](/consulting_services_website/contact/) today.
+Your data has potential. We'll help you realize it. [Contact us](/contact/) today.

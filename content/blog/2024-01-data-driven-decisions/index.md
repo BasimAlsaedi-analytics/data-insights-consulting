@@ -235,7 +235,7 @@ Start today. Start small. But start.
 
 ## Ready to Transform Your Organization?
 
-At Data Insights Consulting, we've helped hundreds of organizations become truly data-driven. [Contact us](/consulting_services_website/contact/) to learn how we can accelerate your journey.
+At Data Insights Consulting, we've helped hundreds of organizations become truly data-driven. [Contact us](/contact/) to learn how we can accelerate your journey.
 
 ### Related Resources:
 - [Download: Data-Driven Maturity Assessment](/resources/maturity-assessment)

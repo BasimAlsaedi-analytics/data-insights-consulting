@@ -57,4 +57,4 @@ Our team brings together diverse expertise across:
 
 ## Get Started
 
-Ready to unlock the power of your data? [Contact us](/consulting_services_website/contact/) for a free consultation and discover how we can help transform your organization through data-driven insights.
+Ready to unlock the power of your data? [Contact us](/contact/) for a free consultation and discover how we can help transform your organization through data-driven insights.

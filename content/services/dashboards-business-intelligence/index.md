@@ -59,4 +59,4 @@ No lengthy proposals. No buzzwords. Just dashboards that transform how you run y
 
 ## Let's Build Your Dashboard
 
-[Contact us](/consulting_services_website/contact/) today for a free consultation.
+[Contact us](/contact/) today for a free consultation.

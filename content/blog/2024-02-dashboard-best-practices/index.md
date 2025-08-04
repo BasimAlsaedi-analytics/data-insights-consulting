@@ -446,7 +446,7 @@ Remember: the best dashboard is the one that gets used. Focus on your users' nee
 
 ## Need Dashboard Help?
 
-Our team has designed dashboards for Fortune 500 companies and startups alike. [Contact us](/consulting_services_website/contact/) for a dashboard design consultation.
+Our team has designed dashboards for Fortune 500 companies and startups alike. [Contact us](/contact/) for a dashboard design consultation.
 
 ### Resources:
 - [Dashboard Design Templates](/resources/dashboard-templates)

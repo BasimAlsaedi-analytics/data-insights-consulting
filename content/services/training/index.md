@@ -68,4 +68,4 @@ The best investment in data? Your people. We train them to excel.
 
 ## Let's Upskill Your Team
 
-Invest in your people. Transform your business. [Contact us](/consulting_services_website/contact/) to discuss training.
+Invest in your people. Transform your business. [Contact us](/contact/) to discuss training.
